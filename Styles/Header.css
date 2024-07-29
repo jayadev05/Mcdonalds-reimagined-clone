@@ -1,0 +1,67 @@
+/*  nav header  */
+
+nav {
+  display: flex;
+  width: 100%;
+  padding: 10px;
+  align-items: center;
+  justify-content: space-between;
+}
+#nav-left img {
+  cursor: pointer;
+  animation: slide-down 0.7s linear backwards;
+}
+
+#nav-right {
+  margin-right: 20px;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  animation: slide-down 1s linear backwards;
+}
+summary {
+  list-style: none;
+  width: fit-content;
+  padding-right: 10px;
+  border-right: 1px solid black;
+}
+details {
+  position: relative;
+}
+details ul {
+  position: absolute;
+  width: fit-content;
+  right: 100%;
+  z-index: 2;
+}
+details ul li {
+  list-style: none;
+  font-family: Dongpora;
+  font-size: 1.7rem;
+  letter-spacing: 1px;
+  padding: 20px;
+  background-color: rgb(255, 183, 15);
+  cursor: pointer;
+}
+details ul li:hover {
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 183, 15);
+}
+
+#nav-right i:nth-child(1):hover {
+  color: rgb(255, 183, 15);
+  transition: color 0.4s;
+}
+
+#nav-right i:nth-last-child(1) {
+  font-size: 1.2rem;
+  background-color: rgb(255, 183, 15);
+  padding: 6px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+#nav-right i:nth-last-child(1):hover {
+  background-color: black;
+  color: rgb(255, 183, 15);
+  transition: color 0.4s;
+}

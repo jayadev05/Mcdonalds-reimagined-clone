@@ -1,0 +1,115 @@
+/*Nav + Hero */
+
+@keyframes slide-down {
+  from {
+    transform: translateY(-80px);
+    opacity: 0.5;
+  }
+
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes fade-up {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes slide-right {
+  from {
+    transform: translateX(-1800px);
+  }
+  to {
+    transform: translateX(0px);
+  }
+}
+
+/*marquee text*/
+
+@keyframes marquee {
+  from {
+    transform: translateX(-50%);
+  }
+
+  to {
+    transform: translateX(-400%);
+  }
+}
+
+@keyframes marquee-2 {
+  from {
+    transform: translateX(0%);
+  }
+
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+/*Side-burger*/
+
+@keyframes slide-left {
+  from {
+    transform: translateX(50%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/*Whats in Burger*/
+
+@keyframes slide-left-2 {
+  from {
+    transform: translateX(-50%);
+  }
+
+  to {
+    transform: translateX(0);
+  }
+}
+@keyframes slide-right-2 {
+  from {
+    transform: translateX(100%);
+  }
+
+  to {
+    transform: translateX(0);
+  }
+}
+@keyframes scaleup {
+  from {
+    transform: scale(0.7);
+  }
+
+  to {
+    transform: scale(1);
+  }
+}
+
+/*Animation compaitability*/
+
+@supports not (animation-timeline: scroll(root)) {
+  .text-slide {
+    animation: marquee 5s linear infinite;
+  }
+  @keyframes marquee {
+    from {
+      transform: translateX(0%);
+    }
+
+    to {
+      transform: translateX(-100%);
+    }
+  }
+}
