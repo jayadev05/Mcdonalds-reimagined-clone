@@ -90,7 +90,7 @@ a::after {
   margin-left: 5px;
 }
 .footer-mid h1 {
-  font-size: 20rem;
+  font-size: clamp(100px, 22vw, 350px);
   text-align: center;
   font-weight: 300;
   font-family: Dongpora;
